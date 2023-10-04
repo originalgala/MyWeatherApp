@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <span class="logoAppName">
+      <img
+        src="images/logoicon.png"
+        alt="icon of sun and clouds"
+        width="35px"
+      />
+      <em>MyWeatherNow</em>
+    </span>
+
+    <div class="container">
+      <div class="row" id="contents">
+        <div class="col-7">
+          <header>
+            <ul>
+              <li>Johannesburg</li>
+              <li>Cape Town</li>
+              <li>Durban</li>
+            </ul>
+          </header>
+
+          <section>
+            <form>
+              <input type="text" placeholder="Enter city..." id="city-input" />
+              <input type="submit" class="btn" value="search" />
+              <input
+                type="button"
+                class="btn-success"
+                value="current"
+                id="current-button"
+              />
+            </form>
+          </section>
+
+          <main>
+            <div class="location">
+              <div class="row">
+                <div class="col-6">
+                  <h1 id="city-displayed">Pretoria</h1>
+                  <p class="date">Sunday, 10 Sept.</p>
+
+                  <p id="conditions">Sunny</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="temperature">
+              <div class="row">
+                <div class="col-6">
+                  <img src="images/sunny.png" alt="sun icon" />
+                  <span class="temp">31</span>
+                  <span clas="unit"> </span>
+                </div>
+
+                <div class="col-6">
+                  <span class="wind_humid">
+                    <img
+                      src="images/windspeed.png"
+                      alt="windicon"
+                      class="windspeed"
+                    />
+                    <img
+                      src="images/humidity_precipitation.png"
+                      alt="water drop icon"
+                      class="humid"
+                    />
+                  </span>
+                  <article>
+                    Precipitation:
+                    <span id="Precipitation">
+                      <em> 0%</em>
+                    </span>
+                    <br />
+                    Humidity:
+                    <span id="humidity">
+                      <em>15%</em>
+                    </span>
+                    <br />
+                    Wind:
+                    <span id="winds"> <em> 6</em> </span>km/h
+                  </article>
+                </div>
+              </div>
+            </div>
+            <br />
+          </main>
+
+          <div class="row" id="daysforecast">
+            <h5>5 days forecast</h5>
+            <div class="card1" style="width: 7rem">
+              <h6 class="card-title">Mon</h6>
+              <img src="images/sunny.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">32&degC</p>
+              </div>
+            </div>
+
+            <div class="card2" style="width: 7rem">
+              <h6 class="card-title">Tues</h6>
+              <img
+                src="images/cloudy.png"
+                class="card-img-top"
+                alt="weather Icon"
+              />
+              <div class="card-body">
+                <p class="card-text">23&degC</p>
+              </div>
+            </div>
+
+            <div class="card3" style="width: 7rem">
+              <h6 class="card-title">Wed</h6>
+              <img
+                src="images/sunny.png"
+                class="card-img-top"
+                alt="Weather Icon"
+              />
+              <div class="card-body">
+                <p class="card-text">28&degC</p>
+              </div>
+            </div>
+
+            <div class="card4" style="width: 7rem">
+              <h6 class="card-title">Thurs</h6>
+              <img
+                src="images/sunny.png"
+                class="card-img-top"
+                alt="Weather Icon"
+              />
+              <div class="card-body">
+                <p class="card-text">28&degC</p>
+              </div>
+            </div>
+
+            <div class="card5" style="width: 7rem">
+              <h6 class="card-title">Fri</h6>
+              <img
+                src="images/rain.png"
+                class="card-img-top"
+                alt="Weather Icon"
+              />
+              <div class="card-body">
+                <p class="card-text">22&degC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>coded by Galaletsang Tlholoe</footer>
+      <br />
+
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>

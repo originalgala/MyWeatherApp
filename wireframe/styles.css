@@ -1,0 +1,118 @@
+body {
+    background-color: #010178;
+    color: white;
+}
+
+
+header {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 14, 211);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 2px;
+}
+
+section {
+    display: block;
+    padding: 5px 30px;
+   margin: 10px;
+}
+
+input {
+    border-radius: 30px;
+    padding: 3px 15px 4px;
+    margin: 5px;
+}
+
+input.btn {
+    background: #05a43c;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+     padding: 3px 15px 4px;
+        margin: 5px;
+        border-color: #05a43c;
+    border-radius: 30px;
+    }
+
+h6 {
+    font-size: 15px;
+}
+
+footer {
+    margin: 10px;
+}
+
+    .location {
+        margin-top: 15px;
+    }
+
+    .temperature {
+        margin-top: 20px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .temperature img {
+        width: 90px;
+    }
+  
+
+    article {
+        font-size: 15px;
+        font-weight: lighter;
+        
+    }
+
+    .wind_humid img {
+        width: 35px;
+    }
+
+    .logoAppName {
+        font-size: 12px;
+        margin: 25px;
+
+    }
+
+    .logoAppName img {
+        border: solid 2px;
+        border-radius: 50%;
+    }
+
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        font-size: 10px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .card-img-top {
+        width: 50px;
+    }
+
+    #daysforecast {
+        margin-top: 8px;
+        border: 2px solid;
+        border-radius: 4px;
+       padding: 2px 7px;
+       
+    }
+    
+    #contents {
+        padding: 0 5px 7px 10px;
+        margin-right: 100px;
+        border-radius: 20px;
+        border: 2px solid #05a43c;
+    }
